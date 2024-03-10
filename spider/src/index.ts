@@ -202,7 +202,7 @@ async function getGrade() {
                 name: userInfo['data']['login'],
                 avatar: userInfo['data']['avatar_url'],
                 repo_url: repo['student_repository_url'],
-                grades: { main: studentGrades[0]['default'] },
+                grades: { default: studentGrades[0]['default'] },
                 // skip details
                 // details: studentGrades[1]['default'],
                 details: {},
