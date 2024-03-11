@@ -195,7 +195,8 @@ async function getGrade() {
             // Get userinfo
             let userInfo = await octokit.request('GET /users/{username}', { username: githubUsername});
             let latest = await getRepoLogFile(githubUsername, 'latest.json');
-            let lastUpdateAt = await date2timestamp(latest);
+            // FIXME: This is a temp solution for time seconds.
+            let lastUpdateAt = await date2timestamp(latest) - 8 * 60 * 60 * 1000;
             // Store userinfo to json data
             let studentGrades = await getWorksGrade(githubUsername, latest);
             let student = {
