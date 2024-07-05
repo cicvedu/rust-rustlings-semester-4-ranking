@@ -30,7 +30,7 @@ function App() {
           <Icon symbol="icon-autojiangbei" id="logo" />
           <div className="logo-title">
             {/* <span>{websiteTitle}</span> */}
-            <span>2024年自动驾驶OS开发训练营-初阶营第三期</span>
+            <span>2024年自动驾驶OS开发训练营-初阶营第四期-导学</span>
           </div>
         </div>
         <Contact isMobile={mobile} />
